@@ -1,0 +1,8 @@
+<?php
+
+// The previous code
+// Under this line: $application = new yii\console\Application($config);
+
+// Override message controller to our own so we can do the javascript stuff
+$application->controllerMap['message'] = 'console\controllers\MessageController';
+
